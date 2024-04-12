@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+    background-color: rgb(68, 64, 64);
+    width: 100%;
+}
+
+
+
+
+
+
+/*menu BURGUE*/
+
+.btn-abrir-menu i{
+    color: white;
+    font-size: 40px;
+    margin-left: -20px;
+}
+
+.menu-mobile{
+    background-color: rgb(155, 23, 23);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 20%;
+    font-size: 40px;
+
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: rgb(248, 246, 246);
+    font-size: 40px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+    text-align: center;
+}
+.menu-mobile nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: rgb(68, 64, 64);
+    color: white;
+    transform: scale(1.05);
+}
+
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+
+
+
+/*começo do topo*/
+.content{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #881a1a;
+    position: relative;
+    padding-left: 30rem;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    height: 100%;
+    margin-top: 90px;
+    margin-left:-499px;
+}
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.0rem;
+    font-weight: 500;
+    text-decoration: none ;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: #110d0d;
+    border-bottom: 3px solid black;
+    color: rgb(223, 28, 28);
+    border-radius: 25%;
+}
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(31, 29, 30, 0.8)), url(/acer/img/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-section h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 3rem;
+
+}
+    
+.first-section h1:hover{
+    transform: scale(1.05);
+}
+.first-section span{
+    color: rgb(248, 55, 55);
+}
+
+/*começo do cardapio*/
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(12, 12 , 12, 0.9);
+}
+
+.cardapio h2 {
+    font-size: 3rem;
+    color:white;
+    text-decoration: underline;
+}
+
+.cardapio h2:hover{
+    transform: scale(1.05);
+}
+
+.itens-cardapio {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Info h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: azure;
+    text-align: center;
+    left: -500px;
+    padding-top: 10px;
+}
+
+.Info img{
+    margin-left: -20px;
+    margin-top: -85px;
+    width: 390px;
+}
+
+.Info h4 {
+    font-size: 19px;
+    margin-top: -60px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: rgb(22, 9, 9)
+}
+
+.itens-cardapio  div {
+    background-color: #881a1a;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 100px;
+    height: 500px;
+}
+
+.Info .pedir {
+    width: 100px;
+    height: 30px;
+    margin-top: -26px;
+    margin-left: 125px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 16px;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+    font-size: 20px;
+
+}
+
+.itens-cardapio .Info .pedir:hover {
+    background-color: #5e525e;
+    color: whitesmoke;
+}
+
+
+
+ /*Bebidas*/
+
+h3{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+}
+
+.bebidas h3:hover{
+    transform: scale(1.05);
+}
+
+.itens-bebidas {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+h1{
+    text-decoration: underline;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.Coca img{
+    margin-left: 30px;
+    margin-top: -5px;
+    width: 300px;
+}
+
+.Info h4 {
+    font-size: 19px;
+    margin-top: -60px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: rgb(22, 9, 9)
+}
+
+.itens-bebidas  div {
+    background-color: #881a1a;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 100px;
+    height: 500px;
+}
+
+.Info .pedir {
+    width: 100px;
+    height: 30px;
+    margin-top: -26px;
+    margin-left: 125px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 16px;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+    font-size: 20px;
+
+}
+
+.itens-bebidas .Info .pedir:hover {
+    background-color: #5e525e;
+    color: whitesmoke;
+}
+
+
+
+
+/*sobre nós*/
+.sobrenos{
+    background-color:black;
+}
+
+.sobrenos  img {
+    width: 450px;
+    height: 450px;
+    margin-top:3rem;
+    margin-bottom: 50px;
+    margin-left:-35rem;
+    border: 3px solid rgb(155, 155, 155);
+    box-shadow: 0 0 5px white;
+}
+
+.sobrenos img:hover{
+    transform: scale(1.05);
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contentsobre h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 75px;
+    color: white;
+    margin-left: 5rem;
+}
+
+.contentsobre h2:hover{
+    transform: scale(1.05);
+}
+
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.2em;
+    width: 600px;
+    margin-top: 100px;
+    color: white;
+    margin-left: 5rem;
+}
+
+.contentsobre p:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+.contatos {
+    width: 100%;
+    background:rgba(12, 12 , 12, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: aliceblue;
+    padding-bottom: 4rem;
+}
+
+ .contatos h3 {
+    font-size: 3rem;
+    color: rgb(253, 253, 253);
+    margin-bottom: 3rem;
+    margin-left: -05px;
+    margin-top: 20px;
+ }
+
+
+ .contatos h3:hover{
+    transform: scale(1.09);
+ }
+
+
+
+.contatos-seção {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-left: 300px;
+}
+
+.contatos-seção i {
+    color: white;
+    margin-left: -215px;
+    padding: 100px;
+}
+
+.contatos-seção i:hover{
+    color:#881a1a;
+}
+
+.contatos-seção div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    margin-left: -50px;
+    margin-bottom:50px;
+
+}
+
+.contatos-seção div:hover{
+    color: rgb(224, 204, 204);
+}
+ iframe{
+    width: 900px;
+    margin-left: 20px;
+ }
+
+
+
